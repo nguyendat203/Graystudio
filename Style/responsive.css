@@ -1,0 +1,27 @@
+@media screen and (min-width: 1024px) {
+    .hide-on-pc {
+        display: none !important;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 1023px) {
+
+    .hide-on-tablet {
+        display: none !important;
+    }
+
+    .product {
+        padding-top: 22px;
+    }
+
+    .stock__list {
+        overflow-y: auto ;
+    }
+
+    
+}

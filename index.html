@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Graystudio</title>
     <link rel="stylesheet" href="./Style/base.css">
-    <link rel="stylesheet" href="./Style/grid.css">
+    <link rel="stylesheet" href="./Style/responsive.css">
     <link rel="stylesheet" href="./Style/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,12 +19,14 @@
     <!-- Header-start -->
 
     <header id="header">
-        <div class="header__introduce">
+        <div class="header__introduce ">
             <span>Gray Studio, just a friendly keyboard store.</span>
         </div>
 
         <div class="header__search" style="max-width: 1400px; margin: 0 auto;">
-            <div class="header__search-main-content">
+                <a class="header-search__menu hide-on-pc">
+                    <i class="header-search-menu__icon fas fa-bars"></i>
+                </a>
                 <div class="header__search-logo">
                     <img class="header__search-site-logo" src="./Style/img/graystudio_1263x165.png" alt="">
                 </div>
@@ -35,16 +37,15 @@
                         <i class="header__search-icon fas fa-search"></i> 
                     </a>
                 </div>
-            </div>
 
-            <a class="header__cart">
+            <div class="header__cart">
                 <i class="header__cart-icon fas fa-shopping-cart"></i>
-            </a>
+            </div>
         </div>
 
 
 
-        <ul class="header__navlist" style="max-width: 1400px; margin: 0 auto;">
+        <ul class="header__navlist hide-on-tablet" style="max-width: 1400px; margin: 0 auto;">
             <li class="header__navbar-item-wrap">
                 <div class="header__navbar-item">Home</div>
                 <div class="header__navbar-item">Catalog</div>

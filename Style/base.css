@@ -9,3 +9,20 @@
     font-family: Armata;
     src: url('./font/Armata/Armata-Regular.ttf');
 }
+
+
+
+:root {
+    --footer-color:#edeff;
+    --white-color:#fff;
+    
+}
+
+
+.btn { 
+    background-color: #404951;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+}
+
