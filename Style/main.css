@@ -218,9 +218,14 @@
 }
 
 .product__content-des{
+    margin-top: 4px;
+    text-align: center;
+}
+
+.product__content-des span {
     font-size: 20px;
     line-height: 28px;
-    margin-top: 4px;
+    
 }
 
 .stock {
@@ -279,6 +284,10 @@
     margin-top: 25px;
     
 }
+
+.stock__item-description {
+    height: 121px;
+}
 .stock__item-price{
     color: red;
     display: flex;
@@ -290,7 +299,7 @@
     line-height: 23px;
     font-weight: 400;
     font-family:Armata;
-}
+} 
 
 .stock__price-number {
     font-family: Armata;
@@ -315,6 +324,49 @@
     color: #b7b7b7;
     font-size: 13px;
     line-height: 17px;
+
+}
+
+.stock__item-buy{
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+    margin-top: 38px;
+}
+
+.buy {
+    border-radius: 4px;
+    overflow: hidden;
+    font-family: Open_Sans_Condensed;
+    flex: 1;
+    display: block;
+    border: 1px solid rgb(211, 211, 211);
+    margin: 0 4px;
+    
+}
+.stock__item-buy-icon{
+    color: rgb(0, 118, 222);
+    text-decoration: none;
+    
+}
+.stock__item-buy--status-remain{
+    color: var(--white-color);
+    background-color: rgb(73, 73, 73) ;
+    
+}
+
+.stock__item:nth-child(4)>.stock__item-content>.stock__item-buy>.stock__item-buy--status-remain {
+    background-color: #404951;
+}
+
+.stock__item-buy-icon span,
+.stock__item-buy--status-remain span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 15px;
+    height: 100%;
+    font-size: 11px;
 
 }
 
@@ -392,6 +444,11 @@
     padding: 0;
 
 }
+.footer__icon{
+    color: #5c5c5c;
+    font-size: 14px;
+}
+
 .footer__content-des{
     text-decoration: none;
     color: #5c5c5c;
@@ -411,5 +468,6 @@
 .footer__cer-item{
     font-size: 13px;
     line-height: 15px;
+    padding-left: 22px;
 
 }

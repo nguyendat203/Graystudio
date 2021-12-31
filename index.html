@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Graystudio</title>
+    <link rel="stylesheet" href="./Style/main.css">
     <link rel="stylesheet" href="./Style/base.css">
     <link rel="stylesheet" href="./Style/responsive.css">
-    <link rel="stylesheet" href="./Style/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Armata:wght@100&display=swap" rel="stylesheet">
@@ -31,8 +31,8 @@
                     <img class="header__search-site-logo" src="./Style/img/graystudio_1263x165.png" alt="">
                 </div>
     
-                <div class="header__search-box" >
-                    <input type="text" placeholder="What are you looking for" class="header__search-input">
+                <div class="header__search-box hide-on-mobile" >
+                    <input type="text" placeholder="What are you looking for" class="header__search-input ">
                     <a class="btn header__search-icon-wrap">
                         <i class="header__search-icon fas fa-search"></i> 
                     </a>
@@ -45,16 +45,16 @@
 
 
 
-        <ul class="header__navlist hide-on-tablet" style="max-width: 1400px; margin: 0 auto;">
-            <li class="header__navbar-item-wrap">
+        <div class="header__navlist hide-on-tablet hide-on-mobile" style="max-width: 1400px; margin: 0 auto;">
+            <div class="header__navbar-item-wrap">
                 <div class="header__navbar-item">Home</div>
                 <div class="header__navbar-item">Catalog</div>
-            </li>
+            </div>
 
-            <li class="header__navbar-item-wrap">
+            <div class="header__navbar-item-wrap">
                 <div class="header__navbar-item">Login</div>
-            </li>
-        </ul>
+            </div>
+        </div>
 
     </header>
     <!-- Header-end -->
@@ -62,34 +62,34 @@
     <!-- Contact-start -->
 
     <div id="contact">
-        <ul class="contact__list">
-            <li class="contact__item">
+        <div class="contact__list">
+            <div class="contact__item">
                 <i class="contact-icon fab fa-instagram"></i>
 
                 <div class="contact__des-wrap">
                     <div class="contact-des">Instagram</div>
                     <a class="contact-des">Graystudio01</a>
                 </div>
-            </li>
+            </div>
 
-            <li class="contact__item">
+            <div class="contact__item">
                 <i class="contact-icon fab fa-discord"></i>
 
                 <div class="contact__des-wrap">
                     <div class="contact-des">Discord</div>
                     <a class="contact-des">Graystudio</a>
                 </div>
-            </li>
+            </div>
 
-            <li class="contact__item">
+            <div class="contact__item">
                 <i class="contact-icon fas fa-at"></i>
 
                 <div class="contact__des-wrap">
                     <div class="contact-des">Support Mailbox</div>
                     <a class="contact-des">graystudio.club@outlook.com</a>
                 </div>
-            </li>
-        </ul>
+            </div>
+        </div>
     </div>
     <!-- Contact-end -->
 
@@ -145,49 +145,84 @@
                 <div class="stock__item">
                     <div class="stock__item-image">
                         <img class="stock__item-img" src="https://cdn.shopify.com/s/files/1/0217/1948/2468/products/1_ed4f7459-2b42-4f74-9846-a13cb5f74a4c_209x209.jpg?v=1639469527" alt="">
-                        <div class="stock__item--remain">Sold out</div>
+                        <div class="stock__item--remain hide-on-mobile hide-on-mobile">Sold out</div>
                     </div>
                     <div class="stock__item-content">
-                        <div class="stock__item-price">
-                            <div class="stock__price-label">from</div>
-                            <div class="stock__price-number">$50.00</div>
+                        <div class="stock__item-description">
+                            <div class="stock__item-price">
+                                <div class="stock__price-label">from</div>
+                                <div class="stock__price-number">$50.00</div>
+                            </div>
+    
+                            <a href="" class="stock__item-des">
+                                <span>[B Stock] SPACE65:CyberVoyager</span>
+                            </a>
+    
+                            <a class="stock__item-origin">Graystudio</a>
                         </div>
-                        <a href="" class="stock__item-des">
-                            <span>[B Stock] SPACE65:CyberVoyager</span>
-                        </a>
-                        <a class="stock__item-origin">Graystudio</a>
+
+                        <div class="stock__item-buy hide-on-pc">
+                            <a href="" class="buy stock__item-buy-icon">
+                                <span>Quick shop</span>
+                            </a>
+                            <div class=" buy stock__item-buy--status-remain">
+                                <span>Sold out</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="stock__item">
                     <div class="stock__item-image">
                         <img class="stock__item-img" src="https://cdn.shopify.com/s/files/1/0217/1948/2468/products/16_0a7c917b-d23a-4bf8-b421-004bf1065aa4_209x209.jpg?v=1585939400" alt="">
-                        <div class="stock__item--remain">Sold out</div>
+                        <div class="stock__item--remain hide-on-mobile">Sold out</div>
                     </div>
                     <div class="stock__item-content">
-                        <div class="stock__item-price">
-                            <div class="stock__price-label">from</div>
-                            <div class="stock__price-number">$4.90</div>
+                        <div class="stock__item-description">
+                            <div class="stock__item-price">
+                                <div class="stock__price-label">from</div>
+                                <div class="stock__price-number">$4.90</div>
+                            </div>
+                            <a href="" class="stock__item-des">
+                                <span>[In Stock]Extras of Space65:CyberVoyager (PCBs, Pads, etc.)</span>
+                            </a>
+                            <a class="stock__item-origin">Graystudio</a>
                         </div>
-                        <a href="" class="stock__item-des">
-                            <span>[In Stock]Extras of Space65:CyberVoyager (PCBs, Pads, etc.)</span>
-                        </a>
-                        <a class="stock__item-origin">Graystudio</a>
+
+                        <div class="stock__item-buy hide-on-pc">
+                            <a href="" class="buy stock__item-buy-icon">
+                                <span>Quick shop</span>
+                            </a>
+                            <div class=" buy stock__item-buy--status-remain">
+                                <span>Sold out</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="stock__item">
                     <div class="stock__item-image">
                         <img class="stock__item-img" src="https://cdn.shopify.com/s/files/1/0217/1948/2468/products/16_0a7c917b-d23a-4bf8-b421-004bf1065aa4_209x209.jpg?v=1585939400" alt="">
-                        <div class="stock__item--remain">Sold out</div>
+                        <div class="stock__item--remain hide-on-mobile">Sold out</div>
                     </div>
                     <div class="stock__item-content">
-                        <div class="stock__item-price">
-                            <div class="stock__price-label">from</div>
-                            <div class="stock__price-number">$12.90</div>
+                        <div class="stock__item-description">
+                            <div class="stock__item-price">
+                                <div class="stock__price-label">from</div>
+                                <div class="stock__price-number">$12.90</div>
+                            </div>
+                            <a href="" class="stock__item-des">
+                                <span>[In Stock]Extras of Space65:CyberVoyager (Badges, LED Badges, etc.)</span>
+                            </a>
+                            <a class="stock__item-origin">Graystudio</a>
                         </div>
-                        <a href="" class="stock__item-des">
-                            <span>[In Stock]Extras of Space65:CyberVoyager (Badges, LED Badges, etc.)</span>
-                        </a>
-                        <a class="stock__item-origin">Graystudio</a>
+
+                        <div class="stock__item-buy hide-on-pc">
+                            <a href="" class="buy stock__item-buy-icon">
+                                <span>Quick shop</span>
+                            </a>
+                            <div class=" buy stock__item-buy--status-remain">
+                                <span>Sold out</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="stock__item">
@@ -196,28 +231,51 @@
                         
                     </div>
                     <div class="stock__item-content">
-                        <div class="stock__item-price">
-                            <div class="stock__price-number stock__price-number--in-stock">$12.90</div>
+                        <div class="stock__item-description"> 
+                            <div class="stock__item-price">
+                                <div class="stock__price-number stock__price-number--in-stock">$12.90</div>
+                            </div>
+                            <a href="" class="stock__item-des">
+                                <span>[In Stock] Screw Holder</span>
+                            </a>
+                            <a class="stock__item-origin">Graystudio</a>
                         </div>
-                        <a href="" class="stock__item-des">
-                            <span>[In Stock] Screw Holder</span>
-                        </a>
-                        <a class="stock__item-origin">Graystudio</a>
+
+                        <div class="stock__item-buy hide-on-pc">
+                            <a href="" class="buy stock__item-buy-icon">
+                                <span>Quick shop</span>
+                            </a>
+                            <div class=" buy stock__item-buy--status-remain">
+                                <span>Choose option</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="stock__item">
                     <div class="stock__item-image">
                         <img class="stock__item-img" src="https://cdn.shopify.com/s/files/1/0217/1948/2468/products/002_209x209.png?v=1611123055" alt="">
-                        <div class="stock__item--remain">Sold out</div>
+                        <div class="stock__item--remain hide-on-mobile">Sold out</div>
                     </div>
                     <div class="stock__item-content">
-                        <div class="stock__item-price">
-                            <div class="stock__price-number">$139.00</div>
+                        <div class="stock__item-description">
+                            <div class="stock__item-price">
+                                <div class="stock__price-number">$139.00</div>
+                            </div>
+                            <a href="" class="stock__item-des">
+                                <span>Artisan Shield (Artisan Holder)</span>
+                            </a>
+                            <a class="stock__item-origin">Graystudio</a>
+
                         </div>
-                        <a href="" class="stock__item-des">
-                            <span>Artisan Shield (Artisan Holder)</span>
-                        </a>
-                        <a class="stock__item-origin">Graystudio</a>
+                        
+                        <div class="stock__item-buy hide-on-pc">
+                            <a href="" class="buy stock__item-buy-icon">
+                                <span>Quick shop</span>
+                            </a>
+                            <div class=" buy stock__item-buy--status-remain">
+                                <span>Sold out</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -228,7 +286,9 @@
                 <img class="slider__wrapper-image" src="https://cdn.shopify.com/s/files/1/0217/1948/2468/files/D_1350x502_crop_center.jpg?v=1611140466" alt="">
                 <a href="" class="product__content">
                     <div class="product__content-heading">SPACE80:APOLO</div>
-                    <div class="product__content-des">one small step for a man, one giant leap for mankind</div>
+                    <div class="product__content-des">
+                        <span>one small step for a man, one giant leap for mankind</span>
+                    </div>
                     <button class=" slider__link">
                         <span>IC link</span>
                     </button>
@@ -242,25 +302,46 @@
         <div class="footer__list-wrap">
             <ul class="footer__list" style="max-width: 1400px; margin: 80px auto;">
                 <li class="footer__item">
-                    <div class="footer__item-heading">Main menu</div>
-                    <ul class="footer__item-content">
+                    <div class="footer__item-heading">
+                        Main menu
+                        
+                        <div class="footer__item--mobile hide-on-pc hide-on-tablet">
+                            <i class="footer__icon fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <ul class="footer__item-content hide-on-mobile">
                         <a href="" class="footer__content-des">Home</a> <br>
                         <a href="" class="footer__content-des">Catalog</a>
                     </ul>
+
                 </li>
                 <li class="footer__item">
-                    <div class="footer__item-heading">Main menu</div>
-                    <ul class="footer__item-content">
-                        <a href="/" class="footer__content-des">Home</a> <br>
-                        <a href="/" class="footer__content-des">Catalog</a>
-                    </ul>
-                </li>
-                <li class="footer__item">
-                    <div class="footer__item-heading">Main menu</div>
-                    <ul class="footer__item-content">
+                    <div class="footer__item-heading">
+                        Main menu
+                        
+                        <div class="footer__item--mobile hide-on-pc hide-on-tablet">
+                            <i class="footer__icon fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <ul class="footer__item-content hide-on-mobile">
                         <a href="" class="footer__content-des">Home</a> <br>
                         <a href="" class="footer__content-des">Catalog</a>
                     </ul>
+
+                </li>
+                <li class="footer__item">
+                    <div class="footer__item-heading">
+                        Main menu
+                        
+                        <div class="footer__item--mobile hide-on-pc hide-on-tablet">
+                            <i class="footer__icon fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <ul class="footer__item-content hide-on-mobile">
+                        <a href="" class="footer__content-des">Home</a> <br>
+                        <a href="" class="footer__content-des">Catalog</a>
+                    </ul>
+
                 </li>
                 <li class="footer__item">
                     <div class="footer__item-heading">Follow us</div>
